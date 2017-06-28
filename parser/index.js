@@ -15,7 +15,7 @@ let getFeel = temp => {
 }
 
 let currentWeather =  response => {
-	if(reponse.query.results) {
+	if(response.query.results) {
 		let resp = response.query.results.channel;
 		let location = `${resp.location.city}, ${resp.location.country}`;
 		//Condiciones
